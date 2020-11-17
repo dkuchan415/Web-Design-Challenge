@@ -2,6 +2,11 @@
     background-color: purple;
 }
 
+.header {
+    color: teal;
+    text-shadow: 2px 2px lightgray;
+}
+
 .h5 {
     color: teal;
     text-align: center;

@@ -12,7 +12,7 @@
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg bg-dark my_purple">
-        <a class="navbar-brand" href="web_visualizations.html">Summary: Latitude vs. X</a>
+        <a class="navbar-brand" href="web_visualizations.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,10 +27,12 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="temp.html">Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
                 </div>
               </li>
             <li class="nav-item">
@@ -44,22 +46,32 @@
       </nav>
 
     <!-- Content -->
-    <h1>Latitude Analysis Dashboard with Attitude</h1>
+    <h1 class="header">Latitude Analysis Dashboard with Attitude</h1>
+
+    <hr>
+
+    <!-- Containers section -->
 
     <div class ="container">
         <div class = "row">
             <div class = "col-lg-8">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 60%;">
                     <div class="card-body">
 
                         <h5 class="card-title h5">Summary: Latitude vs. X</h5>
 
                         <hr>
 
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
+                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                      <p class="card-text">This project examines several weather metrics in cities across the globe with the goal of determining if a trend exists when compared to a city's latitude. 
+                          The data is from over 500 cities in the OpenWeatherMap API, all observed at the same date and time. 
+                          <br>
+                          <br>
+                          With the API data, four correlation graphs were generated using Matplotlib. These look at temperature, humidity, cloudiness, and wind speed measured against the latitude of the city.
+                        Each page contains the graph, as well as a brief explanation of any meaningful observations from the data.</p>
+                        
+                      <!-- <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a> -->
                     </div>
                   </div>
                 </div>
@@ -68,9 +80,9 @@
     </div>
 
     <div class ="container">
-        <div class = "row">
+        <div class ="row">
             <div class = "col-lg-8">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 40%;">
                     <div class="card-body">
 
                         <h5 class="card-title h5">Visualizations</h5>
