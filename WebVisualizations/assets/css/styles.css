@@ -11,3 +11,12 @@
     color: teal;
     text-align: center;
 }
+
+.left {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.right {float: left;
+    padding: 0 10px 0 0;
+}
