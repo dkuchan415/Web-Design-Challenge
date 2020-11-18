@@ -1,137 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather by Latitude</title>
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets\css\styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather by Latitude</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets\css\styles.css">
 </head>
+
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-dark my_purple">
-        <a class="navbar-brand" href="web_visualizations.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="temp.html">Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                  <!-- <div class="dropdown-divider"></div>
+  <nav class="navbar navbar-expand-lg bg-dark my_purple">
+    <a class="navbar-brand" href="web_visualizations.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temp.html">Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+            <!-- <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Something else here</a> -->
-                </div>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="comparison.html">Comparison</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    <!-- Content -->
-    <h1 class="header">Latitude Analysis Dashboard with Attitude</h1>
-
-    <hr>
-
-    <!-- Containers section -->
-
-    <div class ="container">
-        <div class = "row">
-            <div class = "col-lg-8">
-                <div class="card" style="width: 60%;">
-                    <div class="card-body">
-
-                        <h5 class="card-title h5">Summary: Latitude vs. X</h5>
-
-                        <hr>
-
-                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                      <p class="card-text">This project examines several weather metrics in cities across the globe with the goal of determining if a trend exists when compared to a city's latitude. 
-                          The data is from over 500 cities in the OpenWeatherMap API, all observed at the same date and time. 
-                          <br>
-                          <br>
-                          With the API data, four correlation graphs were generated using Matplotlib. These look at temperature, humidity, cloudiness, and wind speed measured against the latitude of the city.
-                        Each page contains the graph, as well as a brief explanation of any meaningful observations from the data.</p>
-                        
-                      <!-- <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <div class ="container">
-        <div class ="row">
-            <div class = "col-lg-8">
-                <div class="card" style="width: 40%;">
-                    <div class="card-body">
+  <!-- Content -->
+  <h1 class="header">Latitude Analysis Dashboard with Attitude</h1>
 
-                        <h5 class="card-title h5">Visualizations</h5>
+  <hr>
 
-                        <hr>
+  <!-- Containers section -->
 
-                        <!-- Image 1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <div class="card">
+          <div class="card-body">
 
-                        <div class="row">
-                            <div class="col-lg-6 col-xs-4">
-                                <img src="assets/images/Fig1.png" href="C:\Users\Dan\gitrepo\Web-Design-Challenge\WebVisualizations\temp.html" class="img-fluid">
-                            </div>
-                        
+            <h5 class="card-title h5">Summary: Latitude vs. X</h5>
 
-                        <!-- Image 2 -->
+            <hr>
 
-                        
-                            <div class="col-lg-6 col-xs-4">
-                                <img src="assets/images/Fig2.png" class="img-fluid">
-                            </div>
-                        </div>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <p class="card-text">This project examines several weather metrics in cities across the globe with the goal
+              of determining if a trend exists when compared to a city's latitude.
+              The data is from over 500 cities in the OpenWeatherMap API, all observed at the same date and time.
+              <br>
+              <br>
+              With the API data, four correlation graphs were generated using Matplotlib. These look at temperature,
+              humidity, cloudiness, and wind speed measured against the latitude of the city.
+              Each page contains the graph, as well as a brief explanation of any meaningful observations from the data.
+            </p>
 
-                        <!-- Image 3 -->
-
-                        <div class="row">
-                            <div class="col-lg-6 col-xs-4">
-                                <img src="assets/images/Fig3.png" class="img-fluid">
-                            </div>
-
-                        <!-- Image 4 -->
-
-                            <div class="col-lg-6 col-xs-4">
-                                <img src="assets/images/Fig4.png" class="img-fluid">
-                            </div>
-                        </div>
-
-                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <!-- <a href="#" class="card-link">Card link</a>
+            <!-- <a href="#" class="card-link">Card link</a>
                       <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+
+            <h5 class="card-title h5">Visualizations</h5>
+
+            <hr>
+
+            <!-- Image 1 -->
+
+            <div class="row">
+              <div class="col-lg-6 col-xs-4">
+                <img src="assets/images/Fig1.png"
+                  href="C:\Users\Dan\gitrepo\Web-Design-Challenge\WebVisualizations\temp.html" class="img-fluid">
+              </div>
+
+
+              <!-- Image 2 -->
+
+
+              <div class="col-lg-6 col-xs-4">
+                <img src="assets/images/Fig2.png" class="img-fluid">
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+
+            <div class="row">
+              <div class="col-lg-6 col-xs-4">
+                <img src="assets/images/Fig3.png" class="img-fluid">
+              </div>
+
+              <!-- Image 4 -->
+
+              <div class="col-lg-6 col-xs-4">
+                <img src="assets/images/Fig4.png" class="img-fluid">
+              </div>
+            </div>
+
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-
-    <!-- <h2>Directory</h2>
+  <!-- <h2>Directory</h2>
     <ol>
         <li><a href="C:\Users\Dan\gitrepo\Web-Design-Challenge\WebVisualizations\viz1.html" target="blank">Visualization 1 link</a></li>
         <li>Visualization 2 link</li>
@@ -141,8 +142,13 @@
         <li>Data link</li>
     </ol> -->
 
-    <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
